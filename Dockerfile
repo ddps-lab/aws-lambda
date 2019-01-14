@@ -18,3 +18,4 @@ RUN apt-get install -y nodejs
 
 # Install aws-sdk
 RUN npm install aws-sdk
+RUN npm install event-stream
