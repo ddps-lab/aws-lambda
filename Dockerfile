@@ -8,6 +8,9 @@ RUN apt-get update && \
         pkg-config \
         python python-dev
 
+# Install boto3
+RUN pip install boto3
+
 # Install aws-cli
 RUN curl --location https://bootstrap.pypa.io/get-pip.py | python
 RUN pip install awscli
